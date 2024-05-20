@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ */
 body {
   height: 100vh;
   margin: 0;
@@ -13,12 +13,12 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 img {
   width: 600px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 button {
@@ -33,32 +33,41 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
-/* HEADER STYLES */
 
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 16px;
 }
 
-.header .left-links,
+.footer {
+  background-color: #eee;
+}
+
+/* .header .left-links,
 .header .right-links {
   display: flex;
   gap: 16px;
+} */
+
+button {
+  padding: 8px 16px;
 }
 
-/* HERO STYLES */
-
 .content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.buttons {
+/* .buttons {
   margin-top: 1rem;
 }
 
@@ -67,25 +76,22 @@ input {
   padding: 8px;
 }
 
-/* FOOTER STYLES */
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #eeeeee;
-  padding: 16px;
-}
 
 .footer .left-links,
 .footer .right-links {
   display: flex;
   gap: 16px;
-}
+} */
 
 /* LINK STYLES */
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
 
 a {
